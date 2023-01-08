@@ -33,5 +33,50 @@
             Age, on the other hand, should be written in lowercase. 
             It is given a value/solved in runtime, and it changes per year. */
         </script>
+
+        <!-- MDN: Basic Math -->
+        <script>
+            const lotsOfDecimal = 1.766584958675746364;
+
+            console.log("lotsOfDecimal is: " + typeof(lotsOfDecimal)); // Outputs 'number'
+            console.log(lotsOfDecimal.toFixed(3)); // Outputs 1.767
+
+            let myNumber = "21",
+                myOtherNumber = "69";
+
+            myNumber += 3;
+
+            console.log(myNumber);  // Outputs 213
+            console.log(Number(myOtherNumber) + 3); // Outputs 72
+
+            let num1 = 10,
+                num2 = 50;
+            console.log(9 * num1);
+            console.log(num1 ** 3);
+            console.log(num2 + num1 / 8 + 2);
+        </script>
+
+        <!-- Fixing addition -->
+        <script>
+            "use strict";
+
+            let promptA = prompt("First number?", 1);
+            let promptB = prompt("Second number?", 2);
+
+            alert(promptA + promptB) // Outputs 12
+            alert(+promptA + +promptB);  // Correct
+        </script>
+
+        <!-- Assignment Section -->
+        <script>
+            console.log(23 + 97);
+            console.log(23 + 97 + 50 + 99 + 21 + 69);
+            console.log((4 + 6 + 9) / 77 );
+
+            let a = 10;
+            const max = 57;
+            let actual = max - 13;
+            let percentage = actual / max; 
+        </script>
     </body>
 </html>
