@@ -13,3 +13,9 @@ A repository dedicated to JScript practice code
       * Shorthand techniques
       * String conversion
     * Exercises and tests
+
+* 01/09
+  * Fundamentals II
+    * JScript data types (8)
+    * Introduction to Strings
+    * String methods
