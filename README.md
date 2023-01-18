@@ -19,3 +19,15 @@ A repository dedicated to JScript practice code
     * JScript data types (8)
     * Introduction to Strings
     * String methods
+  
+* 01/18
+  * Fundamentals II
+    * Review of data types, and Strings
+      * Null vs Undefined
+      * Comparison checks using ==, and ===
+    * Review exhaustive list of String methods
+    * Conditionals
+      * Logical operators
+      * Comparisons
+      * Conditionals (if, else if, else, switch)
+      * 'Truthy' and 'Falsy' values
