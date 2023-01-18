@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Test</title>
+
+        <style>
+            div {
+                background-color: #000000;
+                color: #fff8dc;
+                text-align: center;
+                font-size: xx-large;
+                font-weight: bolder;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            Loginto Me
+        </div>
+
+        <script>
+            let userName = prompt("Who goes there?");
+            let password;
+
+            if (userName == "Admin") {
+                password = prompt("What's the password?!");
+
+                if (password == "TheMaster") {
+                    alert("Welcome, thy King!");
+                }
+                else if (password == "" || password == null) {
+                    alert("Cancelled. Thou cannot trespass...");
+                }
+                else {
+                    alert("Incorrect. Thou cannot fool thee...");
+                }
+            }
+            else if (userName == "" || userName == null) {
+                alert("Cancelled, coward.");
+            }
+            else {
+                alert("Incorrect. Thou cannot fool thee...")
+            }
+        </script>
+    </body>
+</html>
