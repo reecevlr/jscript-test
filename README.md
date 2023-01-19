@@ -31,3 +31,10 @@ A repository dedicated to JScript practice code
       * Comparisons
       * Conditionals (if, else if, else, switch)
       * 'Truthy' and 'Falsy' values
+
+* 01/19
+  * Fundamentals II
+    * Finish Conditionals and Exercises
+      * MDN Exercises
+    * Finish Assignment (repl.it)
+      * Exercises 1 - 4
