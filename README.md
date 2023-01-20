@@ -38,3 +38,19 @@ A repository dedicated to JScript practice code
       * MDN Exercises
     * Finish Assignment (repl.it)
       * Exercises 1 - 4
+  * JScript Developer Tools
+    * HTML and CSS Review
+    * Introduction to Source Tab
+      * Breakpoints
+      * Events
+      * Script Snippets
+
+* 01/20
+  * Fundamentals III
+    * Introduction to Functions
+      * Function Declarations
+      * Function Expressions
+      * Arrow Function Expression
+    * Return Values
+    * Scope
+      * Global, and Local
