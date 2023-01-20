@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JScript Exercises</title>
+    </head>
+    <body>
+        <script>
+            // Variation 1
+            function checkAge(age) {
+                if (age > 18) {
+                    return true;
+                } else {
+                    return confirm('Did parents allow you?');
+                }
+            }
+
+            // Variation 2
+            function checkAge(age) {
+                // true || confirmation
+                return (age >= 18) || confirm('Did your parents allow you?');
+            }
+
+            // Variation 3
+            function checkAge(age) {
+                // check ? true : confirmation
+                return (age >= 18) ? true : confirm('Did your parents actually allow you?');
+            }
+        </script>
+    </body>
+</html>
