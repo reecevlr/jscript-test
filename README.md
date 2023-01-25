@@ -54,3 +54,12 @@ A repository dedicated to JScript practice code
     * Return Values
     * Scope
       * Global, and Local
+
+* 01/25
+  * Problem Solving
+    * 3 Stages
+      1. Understand the problem
+      2. Plan
+      3. Pseudocode
+  * Divide and Conquer approach
+    - decompose problems into smaller subproblems
