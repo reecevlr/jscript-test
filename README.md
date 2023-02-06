@@ -63,3 +63,21 @@ A repository dedicated to JScript practice code
       3. Pseudocode
   * Divide and Conquer approach
     - decompose problems into smaller subproblems
+
+* 02/06
+  * Understanding Errors
+    * Common errors
+      1. Syntax - grammatical rules (usually)
+      2. Reference - variable (usually)
+      3. Type - incompatible data types (operations, violation of properties, etc.)
+    * Resolving errors
+      * Research (StackOverflow, MDN)
+      * console.log
+      * Browser debugger
+    * Error vs Warning
+      * _Error_ disrupts code's runtime,
+        * _Warning_ does not
+      * _Error_ is usually red,
+        * _Warning_ is in yellow
+      * _Errors_ are problems to be resolved ASAP,
+        * _Warnings_ are only __potential__ problems
