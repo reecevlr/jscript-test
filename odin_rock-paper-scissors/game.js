@@ -1,14 +1,7 @@
-console.log("Hello, World!");
+let playerSelection;
+let computerSelection = getComputerChoice();
 
 // Functions
-function playRound(playerSelection, computerSelection) {
-    /*
-        plays a single round
-        returns String that declares the winner
-        playerSelection (player's choice) must be case insensitive
-    */
-}
-
 function getComputerChoice() {
     let choice = Math.random();
 
@@ -20,10 +13,31 @@ function getComputerChoice() {
         return 'Scissors';
 }
 
-// Values
-const playerSelection = '';
-const computerSelection = getComputerChoice();
+function playRound(playerSelection, computerSelection) {
+    computerSelection = computerSelection.toLowerCase();
+    playerSelection = playerSelection.toLowerCase();
 
-// console.log(choice + ' ' + computerSelection);
-
-// console.log(playRound(playRound(playerSelection, computerSelection)));
+    if (playerSelection === computerSelection) {
+        return 'Draw!';
+    }
+    
+    // Player vs. Computer results
+    if (playerSelection === 'rock') {
+        if (computerSelection === 'paper')
+            return 'Computer wins!';
+        else
+            return 'You win!';
+    }
+    else if (playerSelection === 'paper') {
+        if (computerSelection === 'rock') 
+            return 'You win!';
+        else
+            return 'Computer wins!';
+    }
+    else if (playerSelection === 'scissors') {
+        if (computerSelection === 'rock')
+            return 'Computer wins!'
+        else 
+            return 'You win!';
+    }
+}
