@@ -81,3 +81,8 @@ A repository dedicated to JScript practice code
         * _Warning_ is in yellow
       * _Errors_ are problems to be resolved ASAP,
         * _Warnings_ are only __potential__ problems
+
+* 05/04
+  * Rock, Paper, Scissors
+    * Reviewed previous lessons
+    * Finished project
