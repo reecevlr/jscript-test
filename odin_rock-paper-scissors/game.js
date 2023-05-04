@@ -1,7 +1,6 @@
 console.log("Hello, World!");
 
-// to update, forgot how to jS fuCK
-
+// Functions
 function playRound(playerSelection, computerSelection) {
     /*
         plays a single round
@@ -11,10 +10,20 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function getComputerChoice() {
-    // return either 'Rock', 'Paper', or 'Scissors'
+    let choice = Math.random();
+
+    if (choice < 0.34) 
+        return 'Rock';
+    else if (choice >= 0.34 && choice < 0.67) 
+        return 'Paper';
+    else
+        return 'Scissors';
 }
 
-// rock, paper, or scissors
-const playerSelection = "";
+// Values
+const playerSelection = '';
 const computerSelection = getComputerChoice();
-console.log(playRound(playRound(playerSelection, computerSelection)));
+
+// console.log(choice + ' ' + computerSelection);
+
+// console.log(playRound(playRound(playerSelection, computerSelection)));
