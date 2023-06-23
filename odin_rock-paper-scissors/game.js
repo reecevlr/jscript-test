@@ -2,7 +2,15 @@
 let computerWins = 0;
 let playerWins = 0;
 let playerSelection;
+
 const buttons = document.querySelectorAll('button');
+const compScore = document.querySelector('#compScore');
+const playerScore = document.querySelector('#playerScore');
+const announcer = document.querySelector('.announcer');
+
+// Winner Announcement
+const popup = document.querySelector('#popup-winner');
+const heading = document.querySelector('#popup-header');
 
 // Listeners
 buttons.forEach(btn => {
@@ -39,7 +47,7 @@ function playRound() {
     console.log(computerSelection);
 
     if (playerSelection === computerSelection) {
-        return console.log('DRAW!');
+        return game('draw');
     }
 
     // Player win conditions
@@ -62,12 +70,40 @@ function playRound() {
 }
 
 function game(roundWinner) {
-    // Display winner thru console.log
+    let gameWinner; 
+    // Verify <5 wins
+    if (playerWins === 5 || computerWins === 5) {
+        // Disable buttons
+        buttons.forEach(btn => {
+            btn.disabled = true;
+        });
+
+        if (playerWins === 5) {
+            gameWinner = 'Humanity';
+        }
+        else {
+            gameWinner = 'Machine';
+        }
+
+        // Reveal popup
+        popup.style.display = 'block';
+        announcer.style.display = 'none';
+        heading.textContent = `And the winner is... ${gameWinner}`;
+    }
+    
+    // Display winner
     if (roundWinner === 'player') {
-        console.log(`Player wins! With a total of ${playerWins} points!`);
+        playerScore.textContent = playerWins;
+        announcer.textContent = 'Humanity takes a stand... +1';
+        // console.log(`Player wins! With a total of ${playerWins} points!`);
+    }
+    else if (roundWinner === 'computer') {
+        compScore.textContent = computerWins;
+        announcer.textContent = 'The Machine strikes back... +1';
+        // console.log(`Computer wins! With a total of ${computerWins} points!`);
     }
     else {
-        console.log(`Computer wins! With a total of ${computerWins} points!`);
+        announcer.textContent = 'A power draw! +0';
     }
 }
 
