@@ -86,3 +86,8 @@ A repository dedicated to JScript practice code
   * Rock, Paper, Scissors
     * Reviewed previous lessons
     * Finished project
+
+* 06/23
+  * DOM Manipulation and Events
+    * Finished Exercises, and Assignments
+    * Reviewed previous lessons
